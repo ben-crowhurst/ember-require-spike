@@ -1,5 +1,5 @@
 define({
-	app_name: "Mobaq",
+	app_name: "App Example",
 	shim: {
 		"ember": {
 			deps: ["handlebars", "jquery"],
