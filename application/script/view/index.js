@@ -1,7 +1,16 @@
-define(["ember"], function(Ember) {
+var dependencies = [
+	"ember",
+	"view/login",
+	"text!template/index.hbs",
+];
+
+define(dependencies, function(Ember, loginView, template) {
 	var view = Ember.View.extend({
-		defaultTemplate: Ember.Handlebars.compile("login page <a href='#' {{action 'login'}}>Login</a>")
+		defaultTemplate: Ember.Handlebars.compile(template)
 	});
 
-	return view;
+	return $.extend({
+		IndexView: view,
+		IndexController: null
+	}, loginView);
 });
