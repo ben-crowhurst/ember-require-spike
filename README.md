@@ -1,4 +1,4 @@
-Ember-Require Setup
+Ember Require Spike
 =================
 
 Example Ember project with module loading via Require.
